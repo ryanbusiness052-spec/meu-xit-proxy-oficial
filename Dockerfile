@@ -28,10 +28,7 @@ RUN openssl req -x509 -new -nodes -key /app/security/private.key -sha256 -days 3
 RUN cat /app/security/public.crt /app/security/private.key > /app/security/full.pem
 
 # 📄 CRIAR O SCRIPT PYTHON SEPARADO (AQUI NÃO TEM ERRO!)
-RUN echo "
-from mitmproxy import http
-import json
-import re
+COPY addon.py /app/addon.py
 
 # 🔥 SUAS CONFIGURAÇÕES - TUDO FUNCIONANDO 🔥
 ANTIBAN = True          # 🛡️ ANTIBAN MÁXIMO
