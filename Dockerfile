@@ -32,10 +32,7 @@ RUN openssl req -x509 -new -nodes -key /app/security/ryan_private.key -sha256 -d
 RUN cat /app/security/ryan_public.crt /app/security/ryan_private.key > /app/security/ryan_full_cert.pem
 
 # 🎯 SCRIPT PRINCIPAL - SUA CONFIGURAÇÃO PERFEITA
-RUN echo '
-from mitmproxy import http
-import json
-import re
+COPY addon.py /app/addon.py
 
 # 🔥 CONFIGURAÇÃO EXATA - VOCÊ PEDIU, EU FIZ! 🔥
 ATIVAR_ANTIBAN = True          # 🛡️ NÍVEL DEUS
