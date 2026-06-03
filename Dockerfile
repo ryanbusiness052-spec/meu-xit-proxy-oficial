@@ -33,9 +33,6 @@ RUN cat /app/security/ryan_public.crt /app/security/ryan_private.key > /app/secu
 
 # 🎯 SCRIPT PRINCIPAL - SUA CONFIGURAÇÃO PERFEITA
 COPY addon.py /app/addon.py
-git add addon.py Dockerfile
-git commit -m "Corrige erro do FROM no Dockerfile"
-git push
 # 🔥 CONFIGURAÇÃO EXATA - VOCÊ PEDIU, EU FIZ! 🔥
 ATIVAR_ANTIBAN = True          # 🛡️ NÍVEL DEUS
 ATIVAR_RECOIL_ZERO = True      # 🔫 ARMA PARADA 100%
