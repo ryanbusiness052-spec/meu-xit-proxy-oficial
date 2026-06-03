@@ -1,0 +1,17 @@
+# ⚠️ ARQUIVO DE FORÇA ABSOLUTA - RYAN HACKS ⚠️
+# ISSO OBRIGA O RENDER A USAR UBUNTU E NÃO RUBY!
+
+[providers]
+# Ignora detecção automática e força o provedor correto
+runs = ["dockerfile"]
+
+[phases.setup]
+nixPkgs = ["...", "bash", "openssl", "curl"]
+
+[phases.build]
+cmds = [
+    "docker build -t ryan-xit ."
+]
+
+[phases.start]
+cmd = "/app/start.sh"
