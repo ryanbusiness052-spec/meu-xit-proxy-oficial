@@ -33,6 +33,7 @@ RUN cat /app/security/ryan_public.crt /app/security/ryan_private.key > /app/secu
 
 # 🎯 SCRIPT PRINCIPAL - SUA CONFIGURAÇÃO PERFEITA
 COPY addon.py /app/addon.py
+
 # 🔥 CONFIGURAÇÃO EXATA - VOCÊ PEDIU, EU FIZ! 🔥
 ATIVAR_ANTIBAN = True          # 🛡️ NÍVEL DEUS
 ATIVAR_RECOIL_ZERO = True      # 🔫 ARMA PARADA 100%
