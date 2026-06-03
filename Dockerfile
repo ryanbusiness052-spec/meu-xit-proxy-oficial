@@ -28,7 +28,7 @@ RUN cat /app/security/ryan_public.crt /app/security/ryan_private.key > /app/secu
 
 # 🚀 SCRIPT DE INÍCIO
 RUN echo '#!/bin/bash
-echo "================================"
+    echo "================================"
     echo "🔥 RYAN ELITE SERVER - ONLINE 🔥"
 echo "🔗  PROXY RODANDO NA PORTA: 8080"
 echo "🔐  CERTIFICADO DISPONÍVEL NA PORTA: 9000"
